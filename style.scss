@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Righteous;
+}
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.righteous-regular {
+  font-family: "Righteous", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: black;
+}
+.nav {
+  width: 100%;
+  padding: 10px;
+  background-color: #1c1814;
+  .nav-con {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      width: 211px;
+      height: 60px;
+      color: #fff;
+      background-color: #ff7143;
+      border: none;
+      border-radius: 10px;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 50px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+  @media (max-width: 500px) {
+    .nav-con {
+      ul,
+      button {
+        display: none;
+      }
+    }
+  }
+}
+.sec-1 {
+  width: 100%;
+  padding: 10px;
+
+  .sec-con {
+    max-width: 1250px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(img/Rectangle-12.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .w-all {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .flex {
+        display: flex;
+        gap: 20px;
+      }
+      .w-50 {
+        padding: 20px;
+        margin-top: 70px;
+        h1 {
+          font-size: 50px;
+          color: white;
+          font-weight: 700;
+          width: 400px;
+        }
+        p {
+          width: 459px;
+          height: 90px;
+          top: 261px;
+          color: gray;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 30px;
+        }
+        button {
+          width: 211px;
+          height: 50px;
+          color: #fff;
+          background-color: #c99e71;
+          border: none;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    padding: 0;
+    .sec-con {
+      .w-all {
+        justify-content: center;
+        align-items: center;
+        .flex {
+          img {
+            width: 10px;
+          }
+          button {
+            margin-top: 100px;
+          }
+        }
+        img {
+          width: 70%;
+          margin: 0 auto;
+        }
+        .w-50 {
+          h1 {
+            width: 280px;
+            font-size: 30px;
+          }
+          p {
+            height: 20px;
+            width: 100%;
+          }
+        }
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+.sec-2 {
+  width: 100%;
+  .sec2-con {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #1c1814;
+    align-items: center;
+    .img-flexs {
+      display: flex;
+      gap: 50px;
+
+      img {
+        width: 300px;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .img-flexs {
+      margin-top: 20px;
+      gap: 10px;
+      p {
+        font-size: 20px;
+      }
+      flex-direction: column;
+    }
+  }
+}
+.sec-3 {
+  width: 100%;
+
+  .sec3-3 {
+    background-color: #1c1814;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img-lop {
+      margin-top: 50px;
+      display: flex;
+      gap: 10px;
+      .img-ichki {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .text-lop {
+      color: white;
+      width: 410px;
+      height: 465px;
+      padding: 30px;
+      p {
+        color: gray;
+      }
+      h1 {
+        width: 278px;
+        height: 124px;
+        color: white;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    .sec3-3 {
+      flex-direction: column;
+      .text-lop {
+        width: 300px;
+      }
+      .img-lop {
+        img {
+          width: 140px;
+        }
+      }
+    }
+  }
+}
+.sec-4 {
+  width: 100%;
+  .sec4-con {
+    display: flex;
+    max-width: 1250px;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #1c1814;
+
+    align-items: center;
+    .card {
+      margin-top: 100px;
+      text-align: center;
+      color: white;
+      button {
+        background-color: #c99e71;
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+        border: none;
+        color: white;
+      }
+      .cards {
+        font-size: 20px;
+        display: flex;
+        gap: 40px;
+        margin-top: 20px;
+        .cardn {
+          background-color: #121315;
+          width: 350px;
+          padding: 20px;
+          h1 {
+            font-size: 30px;
+          }
+          button {
+            background-color: #c99e71;
+            width: 169px;
+            height: 28px;
+            border: none;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .sec4-con {
+      .card {
+        .cards {
+          flex-direction: column;
+          .cardn {
+            width: 300px;
+            img {
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.sec-5 {
+  width: 100%;
+  .sec5-con {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #1c1814;
+    justify-content: center;
+    align-items: center;
+    .end {
+      margin-top: 100px;
+      display: flex;
+      border: 1px solid #14110e;
+      width: 900px;
+      gap: 60px;
+      align-items: center;
+      h1 {
+        color: white;
+        width: 300px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: gray;
+        margin-bottom: 20px;
+      }
+      button {
+        width: 200px;
+        height: 40px;
+        background-color: #c99e71;
+        border: none;
+      }
+      .w-50 {
+        img {
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    .sec5-con {
+      .end {
+        .w-50 {
+          h1 {
+            padding: 20px;
+            font-size: 25px;
+          }
+          img {
+            padding: 20px;
+            margin-left: 10px;
+          }
+          p {
+            padding: 20px;
+          }
+          button {
+            margin-left: 10%;
+          }
+        }
+        flex-direction: column;
+      }
+    }
+  }
+}
